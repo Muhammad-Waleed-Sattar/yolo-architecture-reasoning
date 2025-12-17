@@ -1,7 +1,13 @@
 # YOLO Architecture Reasoning: From v1 to Modern Variants
 
 ## Motivation
-Why understanding architectural decisions in object detection matters.
+## Motivation
+Object detection systems are often evaluated primarily through benchmarks such as mAP and inference speed. While these metrics are important, they do not explain *why* a particular architecture performs well or *why* certain design decisions persist across generations of models.
+
+YOLO (You Only Look Once) represents a major shift in object detection by framing detection as a single regression problem rather than a multi-stage pipeline. Understanding the architectural reasoning behind YOLO—especially its early design choices—provides insight into how constraints such as real-time inference, computational efficiency, and end-to-end optimization shape modern deep learning systems.
+
+This project focuses on reasoning about YOLO’s architectural structure rather than reproducing results, with the goal of developing deeper intuition about model design tradeoffs that generalize beyond a single algorithm.
+
 
 ## Problem Statement
 What question this project tries to answer.
