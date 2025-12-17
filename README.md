@@ -24,7 +24,11 @@ The model divides the input image into a fixed grid, with each grid cell respons
 While this approach dramatically improves inference speed, it also introduces limitations, particularly in handling small objects and multiple objects within the same grid cell. These limitations are not accidental flaws but consequences of deliberate architectural choices made to prioritize real-time performance and end-to-end simplicity.
 
 ## Key Architectural Decisions in YOLO
-Why YOLO uses grid-based prediction, convolutional layers, and unified detection.
+One of the most significant architectural decisions in YOLO is the use of grid-based prediction, where each grid cell is responsible for detecting objects whose centers fall within it. This choice simplifies detection into a structured regression problem but also imposes constraints on how many objects can be detected per spatial region.
+
+Another key decision is the use of a shared convolutional backbone for both localization and classification. By extracting features jointly for bounding box prediction and class probability estimation, YOLO enforces tight coupling between spatial and semantic understanding. This coupling improves efficiency and enables end-to-end optimization, but it can reduce flexibility compared to multi-stage detectors that decouple these tasks.
+
+YOLO’s architecture also reflects a strong bias toward global reasoning. Because predictions are made after processing the entire image, the model implicitly learns contextual relationships across object classes and background regions. This global perspective contributes to robustness against false positives but can lead to coarse localization when fine-grained spatial precision is required.
 
 ## Evolution Beyond YOLO v1
 How and why later YOLO versions modified the original design.
