@@ -17,7 +17,11 @@ This project reframes the problem as an architectural reasoning exercise. Rather
 
 
 ## Background: YOLO v1
-High-level overview of YOLO v1 and its design philosophy.
+YOLO v1 introduced a unified approach to object detection by treating the task as a single regression problem. Instead of generating region proposals followed by classification, YOLO processes the entire image through a convolutional network and directly predicts bounding boxes and class probabilities in one forward pass.
+
+The model divides the input image into a fixed grid, with each grid cell responsible for predicting bounding boxes and confidence scores. This design enforces a global reasoning process, allowing the network to learn contextual relationships across the full image rather than relying on local proposals.
+
+While this approach dramatically improves inference speed, it also introduces limitations, particularly in handling small objects and multiple objects within the same grid cell. These limitations are not accidental flaws but consequences of deliberate architectural choices made to prioritize real-time performance and end-to-end simplicity.
 
 ## Key Architectural Decisions in YOLO
 Why YOLO uses grid-based prediction, convolutional layers, and unified detection.
