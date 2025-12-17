@@ -47,7 +47,12 @@ These tradeoffs illustrate a broader design philosophy: YOLO is not optimized to
 
 
 ## What I Would Explore With More Compute
-Concrete next steps if given larger compute resources.
+With access to larger compute resources, I would explore how architectural constraints in YOLO interact with data scale and feature hierarchy depth. One concrete direction would be to systematically vary grid resolution and feature map depth to study how localization error and class confusion change across object sizes.
+
+Another area of interest would be analyzing attention-based or adaptive spatial mechanisms within the YOLO framework, not as replacements, but as controlled augmentations. This would help isolate whether performance gains come from increased representational flexibility or simply from added computational capacity.
+
+Rather than pursuing benchmark improvements directly, these experiments would be designed to probe *why* certain architectural relaxations improve performance and where diminishing returns emerge.
+
 
 ## Reflections
 What I learned and how my understanding evolved.
