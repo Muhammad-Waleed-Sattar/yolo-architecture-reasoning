@@ -55,4 +55,8 @@ Rather than pursuing benchmark improvements directly, these experiments would be
 
 
 ## Reflections
-What I learned and how my understanding evolved.
+This project began as an attempt to revisit earlier coursework that focused more on describing YOLO’s architecture than understanding its underlying design logic. By reframing the task as an architectural reasoning exercise, my understanding shifted from identifying components to analyzing constraints, tradeoffs, and system-level behavior.
+
+One key takeaway is that effective model design is often driven less by theoretical optimality and more by practical constraints such as latency, simplicity, and robustness. Studying YOLO through this lens has influenced how I now approach learning new architectures, emphasizing *why* decisions are made rather than merely *what* is implemented.
+
+This experience reinforced the value of iterative learning and critical reflection, particularly in complex and rapidly evolving fields like machine learning, where progress often comes from refining understanding rather than starting from scratch.
