@@ -39,7 +39,12 @@ Other architectural refinements, such as deeper convolutional backbones, residua
 
 
 ## Tradeoffs and Design Reasoning
-Accuracy vs speed, localization vs classification, simplicity vs flexibility.
+YOLO’s architectural design reflects a series of explicit tradeoffs rather than attempts to optimize a single metric. One of the most prominent tradeoffs is speed versus localization precision. By prioritizing a single forward pass and global prediction, YOLO achieves real-time performance at the cost of fine-grained spatial accuracy, particularly for small or densely packed objects.
+
+Another key tradeoff is simplicity versus flexibility. YOLO’s unified architecture reduces system complexity and makes end-to-end training feasible, but it limits the model’s ability to adapt specialized components for different subtasks. In contrast, multi-stage detectors gain flexibility by decoupling proposal generation and classification, but at the expense of latency and engineering complexity.
+
+These tradeoffs illustrate a broader design philosophy: YOLO is not optimized to be universally optimal, but to be predictably efficient under real-world constraints. Understanding these compromises clarifies why YOLO continues to evolve incrementally rather than abandoning its original architectural principles.
+
 
 ## What I Would Explore With More Compute
 Concrete next steps if given larger compute resources.
