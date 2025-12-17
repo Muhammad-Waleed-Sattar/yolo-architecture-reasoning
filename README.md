@@ -31,7 +31,12 @@ Another key decision is the use of a shared convolutional backbone for both loca
 YOLO’s architecture also reflects a strong bias toward global reasoning. Because predictions are made after processing the entire image, the model implicitly learns contextual relationships across object classes and background regions. This global perspective contributes to robustness against false positives but can lead to coarse localization when fine-grained spatial precision is required.
 
 ## Evolution Beyond YOLO v1
-How and why later YOLO versions modified the original design.
+Subsequent versions of YOLO build directly on the constraints revealed by the original design. Later architectures introduce changes aimed at improving localization accuracy, multi-scale detection, and feature reuse while preserving the core philosophy of real-time, end-to-end detection.
+
+One major evolution is the introduction of multi-scale prediction, which addresses YOLO v1’s difficulty with small objects. By allowing predictions at different spatial resolutions, later YOLO variants relax the rigid grid constraints without abandoning unified detection. This reflects a shift from fixed spatial responsibility toward more flexible feature hierarchies.
+
+Other architectural refinements, such as deeper convolutional backbones, residual connections, and anchor-based bounding box prediction, further balance speed and accuracy. Importantly, these changes do not replace YOLO’s original design philosophy but rather refine it, showing how architectural systems evolve through incremental constraint relaxation rather than wholesale redesign.
+
 
 ## Tradeoffs and Design Reasoning
 Accuracy vs speed, localization vs classification, simplicity vs flexibility.
