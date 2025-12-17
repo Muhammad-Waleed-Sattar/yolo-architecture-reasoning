@@ -9,7 +9,12 @@ This project focuses on reasoning about YOLO’s architectural structure rather 
 
 
 ## Problem Statement
-What question this project tries to answer.
+The central question of this project is: *why is YOLO architected the way it is, and how do those architectural choices influence detection behavior?*
+
+While YOLO is often presented as a fast and unified detector, many explanations focus on *what* layers exist rather than *why* they are arranged in a particular manner. During earlier coursework, I explored YOLO primarily at a descriptive level, which left important gaps in understanding regarding architectural tradeoffs, design constraints, and failure modes.
+
+This project reframes the problem as an architectural reasoning exercise. Rather than proposing a new model or reproducing benchmark results, the goal is to analyze YOLO’s design decisions—such as grid-based prediction, shared feature extraction, and joint localization-classification—and reason about how these choices emerge from constraints like real-time inference, computational efficiency, and end-to-end optimization.
+
 
 ## Background: YOLO v1
 High-level overview of YOLO v1 and its design philosophy.
