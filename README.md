@@ -54,6 +54,15 @@ Another area of interest would be analyzing attention-based or adaptive spatial 
 Rather than pursuing benchmark improvements directly, these experiments would be designed to probe *why* certain architectural relaxations improve performance and where diminishing returns emerge.
 
 
+## Scope and Limitations
+
+This project is intentionally scoped as an architectural reasoning exercise rather than an empirical evaluation. It does not attempt to reproduce benchmark results, train models, or compare quantitative metrics across YOLO variants.
+
+The analysis focuses on conceptual design tradeoffs and high-level architectural evolution. As a result, conclusions drawn here are qualitative and may not capture implementation-specific optimizations present in modern production systems.
+
+Despite these limitations, the project aims to build transferable intuition about model design under real-world constraints, which can inform future experimental or empirical work.
+
+
 ## Reflections
 This project began as an attempt to revisit earlier coursework that focused more on describing YOLO’s architecture than understanding its underlying design logic. By reframing the task as an architectural reasoning exercise, my understanding shifted from identifying components to analyzing constraints, tradeoffs, and system-level behavior.
 
