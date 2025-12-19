@@ -26,7 +26,7 @@ While this approach dramatically improves inference speed, it also introduces li
 
 ## Architectural Comparison: YOLOv1 vs YOLOv8
 
-![YOLO Architecture Comparison](diagram.png)
+![YOLO Architecture Comparison](yolo_v1_vs_yolov8_architecture.png)
 
 
 ## Key Architectural Decisions in YOLO
