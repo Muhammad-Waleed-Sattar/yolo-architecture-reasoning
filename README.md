@@ -93,3 +93,11 @@ decoupled detection heads remain optimal under extreme class imbalance.
 Specifically, I would test selective coupling of classification and
 localization at different feature scales to study convergence behavior
 and localization accuracy tradeoffs.
+
+
+## Future Work
+
+Future extensions of this work could include lightweight experimental
+validation of specific architectural hypotheses, analysis across
+additional detector families, and exploration of how these design
+tradeoffs shift under different data regimes.
