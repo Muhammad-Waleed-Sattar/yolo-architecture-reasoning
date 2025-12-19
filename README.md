@@ -84,3 +84,12 @@ This project began as an attempt to revisit earlier coursework that focused more
 One key takeaway is that effective model design is often driven less by theoretical optimality and more by practical constraints such as latency, simplicity, and robustness. Studying YOLO through this lens has influenced how I now approach learning new architectures, emphasizing *why* decisions are made rather than merely *what* is implemented.
 
 This experience reinforced the value of iterative learning and critical reflection, particularly in complex and rapidly evolving fields like machine learning, where progress often comes from refining understanding rather than starting from scratch.
+
+
+## If I Had Compute
+
+If given access to large-scale compute, I would investigate whether
+decoupled detection heads remain optimal under extreme class imbalance.
+Specifically, I would test selective coupling of classification and
+localization at different feature scales to study convergence behavior
+and localization accuracy tradeoffs.
