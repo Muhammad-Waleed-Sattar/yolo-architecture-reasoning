@@ -101,3 +101,10 @@ Future extensions of this work could include lightweight experimental
 validation of specific architectural hypotheses, analysis across
 additional detector families, and exploration of how these design
 tradeoffs shift under different data regimes.
+
+
+## References
+
+- Redmon et al., *You Only Look Once: Unified, Real-Time Object Detection*, CVPR 2016  
+- Lin et al., *Feature Pyramid Networks for Object Detection*, CVPR 2017  
+- Wang et al., *CSPNet: A New Backbone that Can Enhance Learning Capability of CNN*, CVPR 2020  
