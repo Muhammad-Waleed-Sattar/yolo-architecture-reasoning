@@ -52,6 +52,15 @@ Another key tradeoff is simplicity versus flexibility. YOLO’s unified architec
 These tradeoffs illustrate a broader design philosophy: YOLO is not optimized to be universally optimal, but to be predictably efficient under real-world constraints. Understanding these compromises clarifies why YOLO continues to evolve incrementally rather than abandoning its original architectural principles.
 
 
+### Design Tradeoffs Summary
+
+| Design Choice | Benefit | Cost |
+|--------------|--------|------|
+| Multi-scale features | Improves small-object detection | Increased computation |
+| Decoupled head | Faster convergence and stability | More parameters |
+| Fully convolutional design | Better spatial generalization | Reduced global context |
+
+
 ## What I Would Explore With More Compute
 With access to larger compute resources, I would explore how architectural constraints in YOLO interact with data scale and feature hierarchy depth. One concrete direction would be to systematically vary grid resolution and feature map depth to study how localization error and class confusion change across object sizes.
 
