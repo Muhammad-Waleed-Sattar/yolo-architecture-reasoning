@@ -23,6 +23,12 @@ The model divides the input image into a fixed grid, with each grid cell respons
 
 While this approach dramatically improves inference speed, it also introduces limitations, particularly in handling small objects and multiple objects within the same grid cell. These limitations are not accidental flaws but consequences of deliberate architectural choices made to prioritize real-time performance and end-to-end simplicity.
 
+
+## Architectural Comparison: YOLOv1 vs YOLOv8
+
+![YOLO Architecture Comparison](diagram.png)
+
+
 ## Key Architectural Decisions in YOLO
 One of the most significant architectural decisions in YOLO is the use of grid-based prediction, where each grid cell is responsible for detecting objects whose centers fall within it. This choice simplifies detection into a structured regression problem but also imposes constraints on how many objects can be detected per spatial region.
 
